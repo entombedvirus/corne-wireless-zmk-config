@@ -62,10 +62,10 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &kp N1     &kp N2  &kp N3     &kp LBKT  &kp RBKT  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &kp N4     &kp N5  &kp N6     &trans    &trans    &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp N7     &kp N8  &kp N9     &trans    &trans    &trans
-                                        &trans        &trans        &trans          &kp MINUS  &kp N0  &kp EQUAL
+&trans      &trans        &trans        &trans        &trans        &trans          &kp N1  &kp N2  &kp N3     &kp LBKT              &kp RBKT               &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &kp N4  &kp N5  &kp N6     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp N7  &kp N8  &kp N9     &trans                &trans                 &trans
+                                        &trans        &trans        &trans          &trans  &kp N0  &kp EQUAL
             >;
         };
 

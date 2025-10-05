@@ -13,22 +13,27 @@
 #
 ---
 include:
-  - name: typeractive_corne_left
+  - name: typeractive_corne
     board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
-  - name: typeractive_corne_right
-    board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view
+    artifact-name: typeractive_corne_left
   - name: typeractive_corne
     board: nice_nano_v2
+    shield: corne_right nice_view_adapter nice_view
+    artifact-name: typeractive_corne_right
+  - name: corne
+    board: nice_nano_v2
     shield: settings_reset
+    artifact-name: corne_settings_reset
 
-  - name: panda_corne_left
+  - name: panda_corne
     board: nice_nano_v2
     shield: corne_left nice_oled
     cmake-args: "-DZMK_CONFIG_OVERLAY_FILE=${ZEPHYR_BASE}/../config/panda.conf"
-  - name: panda_corne_right
+    artifact-name: panda_corne_left
+  - name: panda_corne
     board: nice_nano_v2
     shield: corne_right nice_oled
     cmake-args: "-DZMK_CONFIG_OVERLAY_FILE=${ZEPHYR_BASE}/../config/panda.conf"
+    artifact-name: panda_corne_right

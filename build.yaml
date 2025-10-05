@@ -27,10 +27,8 @@ include:
   - name: panda_corne
     board: nice_nano_v2
     shield: corne_left nice_oled
-    cmake-args:
-      - "-DZMK_CONFIG_OVERLAY_FILE=${ZEPHYR_BASE}/../config/panda.conf"
+    cmake-args: "-DZMK_CONFIG_OVERLAY_FILE=${ZEPHYR_BASE}/../config/panda.conf"
   - name: panda_corne
     board: nice_nano_v2
     shield: corne_right nice_oled
-    cmake-args:
-      - "-DZMK_CONFIG_OVERLAY_FILE=${ZEPHYR_BASE}/../config/panda.conf"
+    cmake-args: "-DZMK_CONFIG_OVERLAY_FILE=${ZEPHYR_BASE}/../config/panda.conf"

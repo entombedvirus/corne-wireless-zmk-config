@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/ {
+    chosen {
+        zmk,underglow = &rgb_underglow;
+        zmk,display = &oled;
+    };
+};
+
+&rgb_underglow {
+    status = "okay";
+    chain-length = <27>; // first 6 underglow + 21 per-key
+		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+;
+
+&oled {
+    status = "okay";
+};

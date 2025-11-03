@@ -1,0 +1,12 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/ {
+    chosen {
+        // Nice!View display is defined by the shield, no need to override
+        // RGB underglow is NOT defined here (disabled)
+    };
+};

@@ -1,8 +1,7 @@
-#include <dt-bindings/zmk/matrix_transform.h>
-
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        wakeup-source;
     };
 
     mock_kscan: mock_kscan_0 {

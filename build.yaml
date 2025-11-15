@@ -21,6 +21,13 @@ include:
     shield: corne_right nice_view_adapter nice_view
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-typeractive"
 
+  - board: nice_nano_v2
+    shield: corne_left corne_pandakb nice_oled
+    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"
+  - board: nice_nano_v2
+    shield: corne_right corne_pandakb nice_oled
+    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"
+
   - board: seeeduino_xiao_ble
     shield: corne_dongle prospector_adapter
     cmake-args: -DZMK_CONFIG="${base_dir}/config/dongles/prospector"
@@ -29,3 +36,6 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-typeractive"
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"

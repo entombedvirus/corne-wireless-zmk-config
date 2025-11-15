@@ -14,54 +14,54 @@
 ---
 include:
   - display_name: Typeractive Corne Left
-    artifact-name: typeractive_corne_left.uf2
+    artifact-name: typeractive_corne_left
     board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-typeractive"
   - display_name: Typeractive Corne Right
-    artifact-name: typeractive_corne_right.uf2
+    artifact-name: typeractive_corne_right
     board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-typeractive"
 
     # PandaKB corne w/o dongle
   - display_name: PandaKB Corne Left
-    artifact-name: pandakb_corne_left.uf2
+    artifact-name: pandakb_corne_left
     board: nice_nano_v2
     shield: corne_left corne_pandakb nice_oled
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"
   - display_name: PandaKB Corne Right
-    artifact-name: pandakb_corne_right.uf2
+    artifact-name: pandakb_corne_right
     board: nice_nano_v2
     shield: corne_right corne_pandakb nice_oled
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"
 
   - display_name: Prospector Dongle
-    artifact-name: prospector_dongle.uf2
+    artifact-name: prospector_dongle
     board: seeeduino_xiao_ble
     shield: corne_dongle prospector_adapter
     cmake-args: -DZMK_CONFIG="${base_dir}/config/dongles/prospector"
   - display_name: Prospector Dongle Settings Reset
-    artifact-name: prospector_dongle_reset.uf2
+    artifact-name: prospector_dongle_reset
     board: seeeduino_xiao_ble
     shield: settings_reset
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"
 
     # PandaKB corne with prospector dongle
   - display_name: PandaKB Corne Dongle Left
-    artifact-name: pandakb_corne_dongle_left.uf2
+    artifact-name: pandakb_corne_dongle_left
     board: nice_nano_v2
     shield: corne_left corne_pandakb nice_oled
-    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb" -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb" -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - display_name: PandaKB Corne Dongle Right
-    artifact-name: pandakb_corne_dongle_right.uf2
+    artifact-name: pandakb_corne_dongle_right
     board: nice_nano_v2
     shield: corne_right corne_pandakb nice_oled
-    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb" -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb" -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # firware to wipe flash memory. works for both typeractive and pandakb
   - display_name: Corne Settings Reset
-    artifact-name: corne_reset.uf2
+    artifact-name: corne_reset
     board: nice_nano_v2
     shield: settings_reset

@@ -37,10 +37,10 @@ include:
     shield: corne_right corne_pandakb nice_oled
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"
 
-  - display_name: Prospector Dongle
-    artifact-name: prospector_dongle
+  - display_name: Prospector Dongle PandaKB
+    artifact-name: prospector_dongle_pandakb
     board: seeeduino_xiao_ble
-    shield: corne_dongle prospector_adapter
+    shield: corne_dongle prospector_adapter pandakb
     cmake-args: -DZMK_CONFIG="${base_dir}/config/dongles/prospector"
   - display_name: Prospector Dongle Settings Reset
     artifact-name: prospector_dongle_reset

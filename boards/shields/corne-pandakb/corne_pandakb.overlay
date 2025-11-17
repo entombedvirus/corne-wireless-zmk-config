@@ -121,7 +121,7 @@
 / {
 	chosen {
 		zmk,physical-layout = &layout_0;
-#ifdef SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
+#if defined(SHIELD_CORNE_LEFT) || defined(SHIELD_CORNE_RIGHT)
 		zmk,kscan = &kscan0;
 		zmk,battery = &vbatt;
 		zmk,underglow = &led_strip;

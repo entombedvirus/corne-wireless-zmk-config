@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 
-#ifdef SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
+#if defined(SHIELD_CORNE_LEFT) || defined(SHIELD_CORNE_RIGHT)
 // oled,I2c
 &pinctrl {
 	i2c0_default: i2c0_default {

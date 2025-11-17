@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 
+#ifdef SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
 // oled,I2c
 &pinctrl {
 	i2c0_default: i2c0_default {
@@ -114,13 +115,14 @@
 		;
 #endif
 };
+#endif
 
 
 / {
 	chosen {
-		zmk,kscan = &kscan0;
 		zmk,physical-layout = &layout_0;
 #ifdef SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
+		zmk,kscan = &kscan0;
 		zmk,battery = &vbatt;
 		zmk,underglow = &led_strip;
 		zephyr,display = &oled;

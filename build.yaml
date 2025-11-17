@@ -40,7 +40,7 @@ include:
   - display_name: Prospector Dongle PandaKB
     artifact-name: prospector_dongle_pandakb
     board: seeeduino_xiao_ble
-    shield: corne_dongle prospector_adapter pandakb
+    shield: corne_pandakb corne_dongle prospector_adapter
     cmake-args: -DZMK_CONFIG="${base_dir}/config/dongles/prospector"
   - display_name: Prospector Dongle Settings Reset
     artifact-name: prospector_dongle_reset
@@ -52,12 +52,12 @@ include:
   - display_name: PandaKB Corne Dongle Left
     artifact-name: pandakb_corne_dongle_left
     board: nice_nano_v2
-    shield: corne_left corne_pandakb nice_oled
+    shield: corne_pandakb corne_left nice_oled
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb" -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - display_name: PandaKB Corne Dongle Right
     artifact-name: pandakb_corne_dongle_right
     board: nice_nano_v2
-    shield: corne_right corne_pandakb nice_oled
+    shield: corne_pandakb corne_right nice_oled
     cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb" -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   # firware to wipe flash memory. works for both typeractive and pandakb

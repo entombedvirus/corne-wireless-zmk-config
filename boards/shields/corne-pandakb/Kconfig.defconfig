@@ -1,4 +1,4 @@
-if SHIELD_CORNE_PANDAKB
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "CorneRohKeeb"
@@ -35,14 +35,5 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
-endif
-
-if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
-
-config ZMK_SPLIT
-	default y
-
-config ZMK_BLE
-    default y
 
 endif

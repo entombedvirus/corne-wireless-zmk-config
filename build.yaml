@@ -30,7 +30,7 @@ include:
     artifact-name: pandakb_corne_left
     board: nice_nano_v2
     shield: pandakb_left nice_oled
-    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb"
+    cmake-args: -DZMK_CONFIG="${base_dir}/config/keyboards/corne-pandakb" -DCONFIG_ZMK_SPLIT=y -DZMK_SPLIT_ROLE_CENTRAL=y
   - display_name: PandaKB Corne Right
     artifact-name: pandakb_corne_right
     board: nice_nano_v2

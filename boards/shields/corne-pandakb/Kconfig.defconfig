@@ -30,7 +30,7 @@ endif
 if SHIELD_PANDAKB_LEFT || SHIELD_PANDAKB_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "CorneRohKeeb"
+    default "CorneRoh"
 
 config ZMK_SPLIT
     default y
